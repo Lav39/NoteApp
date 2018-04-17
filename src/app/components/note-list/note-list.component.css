@@ -1,0 +1,23 @@
+.notes{
+    padding: 5px;
+    border-bottom: 1px solid;
+}
+.title, .description{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
+    display: inline-block;    
+    white-space: nowrap;
+}
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.selectedNote {
+    background: #c3a943;
+    color: white;
+}
+.small-padding{
+    padding-right: 10px;
+}

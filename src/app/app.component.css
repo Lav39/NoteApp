@@ -1,0 +1,17 @@
+.noteList{
+    width: 39%;
+    display: inline-block;
+    overflow-y: auto;
+    height: calc(100% - 51px);
+    max-height: calc(100% - 51px);    
+    color: black;
+    border: 1px solid;
+}
+.noteEditor{
+    display: inline-block;
+    width: 60%;
+    height: calc(100% - 50px);
+    float: right;
+    padding: 5px;
+    box-sizing: border-box;
+}

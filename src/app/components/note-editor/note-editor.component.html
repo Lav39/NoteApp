@@ -1,0 +1,19 @@
+<div>  
+    <div class="centerDate"> {{today | date:'fullDate'}} </div>
+    <div><b>Title:</b></div>
+    <input class="titleText" 
+       type="text" 
+       [(ngModel)]='titleText'
+       placeholder="Seach"
+       (blur) = "onBlurMethod()"
+       (input)="onTitleChange($event.target.value)">
+</div>
+<div>
+    <div><b>Body:</b> </div>
+    <textarea class="bodyText" 
+       type="text" 
+        [(ngModel)]='bodyText'
+       placeholder="Seach"
+        (blur) = "onBlurMethod()"
+       (input)="onDescriptionChange($event.target.value)"></textarea>
+</div>

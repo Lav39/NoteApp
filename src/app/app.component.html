@@ -1,0 +1,11 @@
+<div>
+  <app-note-options [selectedNote]='selectedNote'></app-note-options>
+</div>
+<div class="noteList" *ngIf="toggleNoteList.isExpanded">
+  <app-note-list [notes]='notes' [selectedNote]='selectedNote' (onSelectNote)="onSelectNote($event)"></app-note-list>
+</div>
+<div class="noteEditor">
+  <app-note-editor [selectedNote]='selectedNote' *ngIf="selectedNote"></app-note-editor>
+</div>
+
+

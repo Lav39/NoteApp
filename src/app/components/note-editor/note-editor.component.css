@@ -1,0 +1,14 @@
+.titleText  {
+    width: 90%;
+    height: 20px;
+    padding-left: 10px;
+}
+.bodyText{
+    width: 90%;
+    height: 200px;
+    padding-left: 10px;
+}
+.centerDate {
+    text-align: center;
+    font-weight: 500;
+}

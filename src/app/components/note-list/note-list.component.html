@@ -1,0 +1,11 @@
+
+<ng-container *ngFor="let note of notes">
+  <div class="notes" [ngClass]="{'selectedNote': note.id == selectedNote.id}" (click)="selectNote(note)" *ngIf="!note.isHidden">
+    <div class="title"><b>{{note.title}}</b></div>
+    <div class="flex-start">
+     <span class="small-padding">{{note.timeStamp | dateTimeFormatter}}</span>
+      <span class="description">{{note.description}}</span>
+    </div>
+  </div>
+</ng-container> 
+
